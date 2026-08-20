@@ -1,0 +1,129 @@
+// hnsmix phrases version: 15 - keep this line! Files without the current
+// version marker are rewritten with fresh defaults at plugin load.
+// End-of-mix scoreboard texts. Color tags: {white} {grey} {red} {blue}
+// {green} {gold}/{yellow} {orange} {darkred} {lightgreen} {darkblue} {purple} {default}
+// Team colors are phrases too (Mix Team1/Team2 Color).
+"Phrases"
+{
+	// Version probe - the plugin checks this phrase to detect a stale
+	// translation cache. Renamed on every phrase-format change.
+	"Mix Phrases V15"
+	{
+		"en"			"15"
+	}
+	"Mix Team1 Color"
+	{
+		"en"			"{red}"
+	}
+	"Mix Team2 Color"
+	{
+		"en"			"{blue}"
+	}
+	"Mix Win"
+	{
+		"#format"		"{1:s},{2:d},{3:d},{4:d}"
+		"en"			"The game has ended & {1}Team #{2}{grey} has won the {3}v{4}!"
+	}
+	"Mix Win Forfeit"
+	{
+		"#format"		"{1:s},{2:d},{3:d},{4:d}"
+		"en"			"The game has ended & {1}Team #{2}{grey} has won the {3}v{4} by forfeit!"
+	}
+	// The team color tag is passed TWICE ({1} and {4}) - SourceMod
+	// phrases can't reuse a format parameter within one phrase.
+	"Mix Team Header"
+	{
+		"#format"		"{1:s},{2:d},{3:d},{4:s},{5:s}"
+		"en"			"{1}Team #{2} {white}| {orange}{3} elo {default}- {4}Captain {5}:"
+	}
+	"Mix Team Header No Captain"
+	{
+		"#format"		"{1:s},{2:d},{3:d},{4:s}"
+		"en"			"{1}Team #{2} {white}| {orange}{3} elo{4}:"
+	}
+	"Mix Player Row"
+	{
+		"#format"		"{1:s},{2:d},{3:s},{4:s},{5:d},{6:d},{7:d},{8:d},{9:d}"
+		"en"			"- {1}#{2} {white}| {3}{4} {white}- {orange}{5} {white}| {green}{6}s {white}- {orange}{7} stabs {white}- {red}{8} fall dmg {white}- {purple}{9} clutches"
+	}
+	// Casual variants: no elo shown (none is at stake).
+	"Mix Team Header Casual"
+	{
+		"#format"		"{1:s},{2:d},{3:s},{4:s}"
+		"en"			"{1}Team #{2} {default}- {3}Captain {4}:"
+	}
+	"Mix Team Header No Captain Casual"
+	{
+		"#format"		"{1:s},{2:d}"
+		"en"			"{1}Team #{2}{default}:"
+	}
+	"Mix Player Row Casual"
+	{
+		"#format"		"{1:s},{2:d},{3:s},{4:s},{5:d},{6:d},{7:d},{8:d}"
+		"en"			"- {1}#{2} {white}| {3}{4} {white}| {green}{5}s {white}- {orange}{6} stabs {white}- {red}{7} fall dmg {white}- {purple}{8} clutches"
+	}
+	"Mix LB Header"
+	{
+		"#format"		"{1:s}"
+		"en"			"{red}Leaderboard {white}- {orange}{1}"
+	}
+	"Mix LB Empty"
+	{
+		"en"			"{grey}No entries yet."
+	}
+	"Mix LB Row Elo"
+	{
+		"#format"		"{1:d},{2:s},{3:d},{4:d},{5:d},{6:d}"
+		"en"			"{orange}#{1} {white}| {green}{2} {white}- {blue}Elo: {orange}{3} {white}| {blue}Games: {orange}{4} {white}| {blue}Won: {orange}{5} {white}| {blue}Stabs: {orange}{6}"
+	}
+	"Mix LB Row WL"
+	{
+		"#format"		"{1:d},{2:s},{3:d},{4:d},{5:d},{6:s}"
+		"en"			"{orange}#{1} {white}| {green}{2} {white}- {blue}{3} games {white}- {green}{4}W{white}/{red}{5}L {white}- {orange}{6}"
+	}
+	"Mix LB Row Survival"
+	{
+		"#format"		"{1:d},{2:s},{3:s},{4:s}"
+		"en"			"{orange}#{1} {white}| {green}{2} {white}- {blue}Total S/T: {orange}{3} {white}- {blue}Average S/T: {orange}{4}"
+	}
+	"Mix LB Row Stabs"
+	{
+		"#format"		"{1:d},{2:s},{3:d},{4:d}"
+		"en"			"{orange}#{1} {white}| {green}{2} {white}- {orange}{3} given {white}/ {red}{4} taken"
+	}
+	"Mix LB Row FallDmg"
+	{
+		"#format"		"{1:d},{2:s},{3:d}"
+		"en"			"{orange}#{1} {white}| {green}{2} {white}- {red}{3} fall dmg"
+	}
+	"Mix LB Row Clutches"
+	{
+		"#format"		"{1:d},{2:s},{3:d}"
+		"en"			"{orange}#{1} {white}| {green}{2} {white}- {purple}{3} clutches"
+	}
+	"Mix Rank Header"
+	{
+		"#format"		"{1:s}"
+		"en"			"{white}Rank Profile for {green}{1}"
+	}
+	"Mix Rank Line1"
+	{
+		"#format"		"{1:s},{2:d}"
+		"en"			"{red}Rank: {orange}{1} {white}- {red}Elo: {orange}{2}"
+	}
+	"Mix Rank Line2"
+	{
+		"#format"		"{1:d},{2:d},{3:d}"
+		"en"			"{blue}Games: {orange}{1} {white}- {blue}Wins: {orange}{2} {white}- {blue}Losses: {orange}{3}"
+	}
+	"Mix Rank Line3"
+	{
+		"#format"		"{1:s},{2:d},{3:d}"
+		"en"			"{blue}S/T: {orange}{1} {white}- {blue}Stabs Given: {orange}{2} {white}- {blue}Stabs Taken: {orange}{3}"
+	}
+	"Mix Rank Line4"
+	{
+		"#format"		"{1:d},{2:d}"
+		"en"			"{blue}FallDMG: {orange}{1} {white}- {blue}Clutches: {orange}{2}"
+	}
+}
